@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main {
+  position: absolute;
+  position-area: center;
+}
+
+.social-icons {
+  position: absolute;
+  left: 10px
+}
+
+.social-icons a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #333;
+}
+
+.social-icons svg {
+  width: 54px;
+  height: 54px;
+  fill: #fff;
+}
+
+.pump {
+  position: absolute;
+  bottom: 0;
+}
+
+.glow path {
+  animation: glow 5s infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) 
+              drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)) 
+              drop-shadow(0 0 30px rgba(255, 255, 255, 0.4));
+  }
+  50% {
+      filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1)) 
+              drop-shadow(0 0 40px rgba(255, 255, 255, 0.9)) 
+              drop-shadow(0 0 60px rgba(255, 255, 255, 0.7));
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
