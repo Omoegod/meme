@@ -465,7 +465,7 @@ function App() {
         </a>
       </div>
       <div class="pump">
-        <a href="https://pump.fun/">a</a>
+        <a href="https://pump.fun/coin/9cEa5tUtFfkJke2SCZaq9hD4ZESw147ucoTgufcLpump">9cEa5tUtFfkJke2SCZaq9hD4ZESw147ucoTgufcLpump</a>
       </div>
     </>
   );
